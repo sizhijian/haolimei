@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/guide.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		var param = window.location.href;
+    		var _param = param.substr(param.indexOf("?")+1);
+    		var index_str = _param.indexOf("&");
+    		var obj_name = decodeURI(_param.substring(0 , index_str));
+    		if(obj_name){
+    			var obj_num = decodeURI(_param.substring(index_str+1));    			
+    			$("#pk_obj_name").text(obj_name);
+    			$(" #pk_object_input").val(obj_name);
+    			$("#pk_obj_num").text(obj_num);
+    			if(+($("#self_num").text()) > +($("#pk_obj_num").text())){
+    				$("#pkResultWin").show();
+    				setTimeout('$("#pkResultWin").hide();$("#i_win_icon").animate({"opacity":"1"},1000);',3000);
+    			}else if(+($("#self_num").text()) < +($("#pk_obj_num").text())){
+    				$("#pkResultLost").show();
+    				setTimeout('$("#pkResultLost").hide();$("#him_win_icon").animate({"opacity":"1"},1000);',3000);    				
+    			}
+    		}
+    		//处理三个奖杯的样式,如果是第1,为红色且有外边框
+			$(".winCup").each(function(index , element){
+				if(+($(element).text())== 1){
+					$(element).addClass("first_cup").parent().addClass("first_cup_parent");
+				}
+			});
+//  		$("#pkResultWin , #pkResultLost").on("touchend",function(){
+//  			$(this).hide();
+//  		});
+			$("#pk_rule_btn").on("touchend",function(){
+    			$("#pk_rule").show();
+    		});
+    		$("#pk_rule .close").on("touchend",function(){
+    			$("#pk_rule").hide();
+    		});
+    		$("#reward_rule_btn").on("touchend",function(){
+    			$("#reward_rule").show();
+    		});
+    		$("#reward_rule .close").on("touchend",function(){
+    			$("#reward_rule").hide();
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap pk">
+		<div id="pk_rule" hidden>
+			<div class="allScreen"></div>
+			<div class="rule_screen">
+				<img src="../static/images/close-.png" class="close">
+					<p class="title">PK规则</p>
+				PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则PK规则
+			</div>
+		</div>
+		<div id="reward_rule" hidden>
+			<div class="allScreen"></div>
+			<div class="rule_screen">
+				<img src="../static/images/close-.png" class="close">
+					<p class="title">奖励规则</p>
+				奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则奖励规则
+			</div>
+		</div>
+		<div class="pkResult" id="pkResultWin" hidden>			
+			<div class="allScreen"></div>
+			<img src="../static/images/youWinImg.png"/>
+		</div>
+		<div class="pkResult" id="pkResultLost" hidden>
+			<div class="allScreen"></div>
+			<img src="../static/images/youLostImg.png"/>
+		</div>
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="location.href='../index.html'"/>
+			<div class="title">我要PK</div>
+		</header>
+		<div class="search fa">
+			<img src="../static/images/pkIcon.png" class="pkIcon"/>
+			<input type="text" name="" id="pk_object_input" readonly="readonly" value="" placeholder="请选择PK对象"/>
+			<a href="pk_select.html"  class="searchIcon"></a>
+		</div>
+		<div class="pkShow clearfix">
+			<div class="meInfo fl">
+				<img src="../static/images/win.png" class="addWinIcon" id="i_win_icon"/>
+				<div class="winIcon">
+					<img src="../static/images/icon.png" class="myIcon"/>
+					<div class="pkerName">我</div>
+				</div>
+				<div class="yeji">
+					业绩: <em id="self_num">3788</em>
+				</div>
+			</div>
+			<div class="TAInfo fl">
+				<img src="../static/images/win.png" class="addWinIcon" id="him_win_icon"/>
+				<a href="pk_select.html">
+					<div class="winIcon">
+						<img src="../static/images/icon.png" class="myIcon"/>
+						<div class="pkerName" id="pk_obj_name">请选择</div>
+					</div>
+				</a>
+				<div class="yeji">
+					业绩: <em id="pk_obj_num">0</em>
+				</div>
+			</div>
+		</div>
+		<div class="ranking clearfix">
+			<div class="yesterday fl">
+				<div class="winCup">
+					8
+				</div>
+				<div class="statement"><em>昨日</em>排名</div>
+			</div>
+			<div class="thisMonth fl">
+				<div class="winCup">
+					1
+				</div>
+				<div class="statement"><em>本月</em>排名</div>
+			</div>
+			<div class="quarter fl">
+				<div class="winCup">
+					1
+				</div>
+				<div class="statement"><em>季度</em>排名</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<button class="PKSystem" id="pk_rule_btn">PK制度</button>
+			<button class="rewardSystem" id="reward_rule_btn">奖励制度</button>
+		</footer>
+	</div>
+</body>
+</html>

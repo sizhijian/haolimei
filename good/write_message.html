@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>写留言</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/jquery.qqFace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$('.emotion').qqFace({ 
+		        assign:'saytext', //给输入框赋值 
+		        path:'../static/images/face/'    //表情图片存放的路径 
+		    });
+		});
+    </script>
+</head>
+<body>
+	<div class="wrap write_message">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">留言编写</div>
+		</header>
+		<p class="title">文章标题</p>
+		<textarea class="msg_textarea" id="saytext" name="saytext" rows="5" cols="" placeholder="留言将由公众号筛选后显示,对所有人可见。"></textarea>
+		<div class="emotion_div"><img src="../static/images/emotion_icon.png" class="emotion"/></div>
+		<button class="sub_btn">提&nbsp;交</button>
+	</div>
+</body>
+</html>

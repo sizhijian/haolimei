@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/calendar/foundation-datepicker.min.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/calendar/foundation-datepicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/calendar/foundation-datepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("#baby_birthday").fdatepicker();
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap joinGoodHome">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">加入好家</div>
+		</header>
+		<div class="choiceYourState">请选择您的状态 ~</div>
+		<ul class="choiceState clearfix">
+			<li class="preparePregnant stateSelected fl" id="preparePregnant">
+				<img src="../static/images/preparePregnantImg.png"/>
+			</li>
+			<li class="isPregnant fl" id="isPregnant">
+				<img src="../static/images/isPregnantImg.png"/>
+			</li>
+			<li class="babyWasBron clearfix fl" id="babyWasBron">
+				<img src="../static/images/babyWasBronImg.png"/>
+			</li>
+			<li class="other fl" id="other">
+				<img src="../static/images/otherImg.png"/>
+			</li>
+		</ul>	
+		<div class="babyBirthday" hidden="">宝宝生日：<input type="text" readonly="readonly" placeholder="请输入宝宝生日" value="" id="baby_birthday"/></div>
+		<div class="babySex" hidden="">宝宝性别：
+			<select name="">
+				<option value="boy">男</option>
+				<option value="girl">女</option>
+			</select>
+		</div>
+		<div class="registerPhone">手机号码：<input type="text" maxlength="11" placeholder="请输入手机号码"/></div>
+		<div class="checkNum">验证码：<input type="text" maxlength="6"/><button id="getCheckCodeBtn">获取验证码</button></div>
+		<a href="index.html"><div class="registerOK">完成注册</div></a>
+	</div>
+</body>
+</html>

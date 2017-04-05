@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>商品管理</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//控制头像样式
+			$("#userIcon").height($("#userIcon").width());
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap myMeiguan">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="location.href='../index.html'"/>
+			<div class="title">个人中心</div>
+		</header>
+		<div class="userInfo">
+			<div class="userName">王丽雁</div>
+			<div class="jobNum">
+				工号
+				<em>12345678</em>
+			</div>
+			<div class="userIcon" id="userIcon">
+				<img src="../static/images/icon.png"/>
+				<input class="update_img_input" type="file" name="" id="">
+			</div>
+			<a href="meiguan_audit.html"><button class="getMoneyBtn">退换货审核</button></a>
+			<nav class="nav">
+				<a href="meiguan_return.html">
+					<div class="left fl">退换货统计</div>
+				</a>
+				<a href="meiguan_orderManage.html">
+					<div class="right fl">业绩管理</div>
+				</a>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>

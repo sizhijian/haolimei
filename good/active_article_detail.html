@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>促销活动</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".good_num ,.goodNum").on("touchend",function(){
+    			if ($(this).hasClass("good_focus")){
+    				$(this).removeClass("good_focus").text(+$(this).text()-1);
+    			}else{
+    				$(this).addClass("good_focus").text(+$(this).text()+1);
+    			}
+    		});
+		});
+    </script>
+</head>
+<body>
+	<div class="wrap parenting_article">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">促销活动</div>
+		</header>
+		<article>
+			<h6 class="title">文章标题</h6>
+			<span class="time">2016-08-08</span>
+			<span class="article_authon">&nbsp;&nbsp;&nbsp;好立美</span>
+			<img src="../static/images/3.jpg"/>
+			<p class="content">
+				文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章
+			</p>
+			<p class="content">
+				文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章
+			</p>
+			<p class="content">
+				文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章
+			</p>
+			<p class="content">
+				文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章
+			</p>			
+			<span class="read">阅读&nbsp;4800</span><span class="good_num">400</span><a href="javascript:void(0);">阅读原文</a><button class="go_weidian">微店逛逛</button>
+		</article>
+		<dl class="message_board">
+			<dt>
+				<div class="title">·························<span>精选留言</span>·························</div>
+				<a href="write_message.html"><div class="write_msg">写留言</div></a>
+			</dt>
+			<dd>
+				<ul class="message_ul">
+					<li>
+						<img src="../static/images/user_icon.png" class="icon"/>
+						<span class="name">艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿</span>
+						<span class="goodNum">33</span>
+						<p class="content">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</p>
+						<div class="time">昨天</div>
+						<div class="author_reply">
+							<p class="font"><em>|</em>作者回复</p>
+							<div class="sub_author_reply">
+								<p class="content">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</p>
+								<div class="time">昨天</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="../static/images/user_icon.png" class="icon"/>
+						<span class="name">艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿艳儿</span>
+						<span class="goodNum">302</span>
+						<p class="content">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</p>
+						<div class="time">昨天</div>						
+					</li>									
+				</ul>
+			</dd>
+			<div class="title">··········<span>以上留言由公众号筛选后显示</span>··········</div>
+		</dl>
+	</div>
+</body>
+</html>

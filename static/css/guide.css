@@ -1,0 +1,247 @@
+{-webkit-user-select: none;}
+body input{-webkit-user-select: text;}
+body select{-webkit-appearance: none;}
+body a:-webkit-any-link{color: #666;}
+.header{width: 100%;height:2.79rem;color: #fff;background: #5f549e;}
+.header-fixed{position: fixed;top: 0;z-index: 3;}
+.header .backImg{display: block;width: 3.6%;margin-left: 5.1%;}
+.header .title{width:82.6%;font-size:1.1rem;text-align: center;}
+.header .setting{display: block;width:5.6%;margin-right: 2.9%;}
+.allScreen{position: fixed;top: 0;left: 0;z-index:2;width: 100%;height: 100%;background: #000;opacity: .5;}
+
+/*美导登录*/
+.login .userName ,.login .passWord{overflow:hidden;width: 72%;height: 3.54rem;padding-left:8%;margin:0 auto;line-height: 3.54rem;border-bottom: 1px solid #b8b8b8;}
+.login .userName{margin-top: 3.54rem;background: url(../images/register_phone_icon.png) no-repeat left center/8%;}
+.login .passWord{background: url(../images/register_password_icon.png) no-repeat left center/8%;}
+.login .passWord .forgetPwd{float:right;width:23%;height: 1.58rem;margin-top:1rem;line-height: 1.58rem;text-align:center;border-left: 1px solid #a7a7a8;}
+.login .passWord .forgetPwd:-webkit-any-link{color: #9a9a9c;}
+.login .loginBtn{display: block;width: 80%;height: 2.95rem;margin: 1.75rem auto 0;font:1.25rem/2.95rem arial;color: #fff;text-align:center;background: #5f549e;border-radius: 30px;}
+.login .goRegister {display: block;width: 20%;margin: 3.58rem auto 0;text-align: center;font-size: 1.05rem;text-decoration: underline;}
+/*美导注册*/
+.register .uploadIcon{width: 17.6%;margin: 3.95rem 0 0 40%;position: relative;}
+.register .uploadIcon input{position: absolute;top: 0;left: 0;height: 100%;opacity: 0;width: 100%;}
+.register .uploadIcon img{border-radius: 50%;}
+.register .personPhoto {position: relative;top: -1rem;margin-left: 58%;font-weight: 600;color: #a9a9a9;}
+.register .redWords {text-align: center;color: #f04848;font-size: 1.1rem;}
+.register .register_form li{width: 72%;height: 3.54rem;padding-left:8%;margin: 0 auto;font:1.2rem/3.65rem arial;color: #adadae;background-repeat:no-repeat;background-position:left;background-size: 8%;border-bottom: 1px solid #bbbbbc;}
+.register .register_form .phoneNum{background-image: url(../images/register_phone_icon.png);}
+.register .register_form .checkCode{background-image: url(../images/register_checkcode_icon.png);}
+.register .register_form .realName,.register .register_form .shopBoss{background-image: url(../images/register_personhead_icon.png);}
+.register .register_form .IDcard,.register .register_form .shopTel{background-image: url(../images/register_IDcard_icon.png);}
+.register .register_form .passWord{background-image: url(../images/register_password_icon.png);}
+.register .register_form .fromShop{background-image: url(../images/register_fromshop_icon.png);}
+.register .register_form li input{width: 100%;}
+.register .register_form li.checkCode input{width: 65%;}
+.register .checkCode .forgetPwd {float: right;width: 29%;height: 1.58rem;margin-top: 1rem;font: 1rem/1.58rem "微软雅黑";text-align: center;border-left: 1px solid #a7a7a8;}
+.register .checkCode .forgetPwd:-webkit-any-link {color: #9a9a9c;}
+.register .register_success{display: block;width: 80%;height: 2.95rem;margin: 1.75rem auto;font:1.25rem/2.95rem arial;color: #fff;text-align:center;background: #5f549e;border-radius: 30px;}
+/*我的美导*/
+.myMeidao .integralRuleContent{position:fixed;top:10%;left:10%;z-index: 2;width: 70%;height: 72%;padding:4% 5%;background: #fff;border-radius: 7px;overflow: scrool;-webkit-overflow-scrolling: touch;}
+.myMeidao .integralRuleContent img{display:block;width: 8%;margin:0 0 4% 92%;}
+.myMeidao .integralRuleContent .title{font-size:1.2rem;text-align: center;}
+.myMeidao .userInfo ,.myMeiguan .userInfo{height:17.20rem;background: url(../images/bg.png) no-repeat center;background-size: 100% 100%;}
+.myMeiguan .userInfo{position: absolute;width: 100%;}
+.myMeidao .userInfo .userName ,.myMeiguan .userInfo .userName{height: 1.625rem;line-height:1.625rem;margin-top: .625rem;font-weight: bold;color: #5f549e;text-align: center;}
+.myMeidao .userInfo .jobNum,.myMeiguan .userInfo .jobNum{height: 1.54rem;line-height:1.54rem;color: #999;text-align: center;}
+.myMeidao .userInfo .jobNum em,.myMeiguan .userInfo .jobNum em{color: #666;}
+.myMeidao .userInfo .userIcon,.myMeiguan .userInfo .userIcon{width: 15.5%;margin: .625rem auto 0;position: relative;border:1px solid #bababa;border-radius: 50%;box-sizing: border-box;}
+.myMeidao .userInfo .userIcon input,.myMeiguan .userInfo .userIcon input{position: absolute;top: 0;left: 0;height: 100%;opacity: 0;width: 100%;}
+.myMeidao .userInfo .userIcon img,.myMeiguan .userInfo .userIcon img{border-radius: 50%;height: 100%;}
+.myMeidao .userInfo .getMoney,.myMeiguan .userInfo .getMoney{height: 4.25rem;}
+.myMeidao .userInfo .getMoney .getMoneyBtn,.myMeiguan .userInfo .getMoneyBtn{display:block;width:32%;height: 2.7rem;margin: 0 8% 0 35%;font-size:.945rem;border: 1px solid #fff;border-radius: 5px;}
+.myMeidao .userInfo .getMoney .getMoneyBtn{text-indent: 13%;background: url(../images/getMoneyIcon.png) no-repeat 12%/17.5%;line-height: 2.7rem;}
+.myMeidao .userInfo .getMoney .getMoneyBtn:-webkit-any-link{color: #333;}
+.myMeiguan .userInfo .getMoneyBtn{margin-top:1rem;background: transparent;}
+.myMeidao .userInfo .getMoney .getMoneyBtn img{width: 17.5%;margin:0 12% 0 11%;vertical-align: baseline;}
+.myMeidao .userInfo .getMoney .getChanceIcon{display: block;width: 3%;}
+.myMeidao .userInfo .getMoney .getChanceBtn{display: block;font-size: 0.64rem;background: transparent;}
+.myMeidao .userInfo .nav{overflow:hidden;width: 85%;height:3.83rem;margin: 0 auto;color:#fff;background: url(../images/nav-bg.png) no-repeat bottom;background-size: 100%;}
+.myMeiguan .userInfo .nav{position: absolute;bottom:0;width:100%;height: 3rem;font:1.2rem/3rem "微软雅黑";color:#fff;background: #5f549e;}
+.myMeidao .userInfo .nav a:-webkit-any-link,.myMeiguan .userInfo .nav a:-webkit-any-link{color: #fff;}
+.myMeiguan .userInfo .nav div{text-align: center;width: 49%;}
+.myMeiguan .userInfo .nav div.left{border-right: 1px solid #fff;}
+.myMeidao .userInfo .nav .item{float: left;width: 33.33%;text-align: center;}
+.myMeidao .userInfo .nav .item .num{height: 2.04rem;line-height: 2.04rem;}
+.myMeidao ul.list{padding: 1.125rem;}
+.myMeidao ul.list > li > a{width:94.5%;height: 2.79rem;margin:0 auto .4rem;border: 1px solid #d3d3d3;border-radius: 3px;box-shadow: 0 .5px 1.5px 0px #d6d6d6;display: flex;display: -webkit-flex;display: -webkit-box;align-items: center;-webkit-align-items: center;-webkit-box-align: center;}
+.myMeidao ul.list > li .itemIcon{display: block;width: 6.3%;margin: 0 5.2% 0 3%;}
+.myMeidao ul.list > li .name{width: 79%;}
+.myMeidao ul.list > li .rightGo{display:block;width:2.8%;}
+/*管理规定 礼仪培训 列表*/
+.rule_list ul{margin-top: 2.79rem;}
+.rule_list ul li,.pk_select ul li{width:95%;height: 3.375rem;margin-left:5%;font: bold 1.2rem/3.375rem "微软雅黑";border-bottom: 1px solid #ebebeb;}
+.rule_list ul li{background: url(../images/popbox-right.png) no-repeat 95% center/3%;}
+.rule_list ul li a ,.pk_select ul li a{display: block;}
+/*管理规定 礼仪培训 详情*/
+.comm_detail article{padding: 0 3%;margin: 2.79rem auto 2rem;}
+.comm_detail article .title{font-weight:bold;font-size:1.45rem;padding:.8rem 0;text-align: center;line-height: 2rem;}
+.comm_detail article .content{color:#2b2b2b;font-size: 1.05rem;text-indent: 5%;line-height: 180%;word-break: break-all;}
+.comm_detail .time{line-height: 2.5rem;color: #969696;}
+.comm_detail .article_authon{line-height: 2.5rem;color: #4e6f99;}
+/*基础知识*/
+.knowledge ,.pk_select{padding-top: 5.7rem;}
+.selectedColor{color: #5f549e;}
+.knowledge .orderNavTab ,.pk_select .pkNavTab{position:fixed;top:2.79rem;z-index:3;width:100%;height: 2.91rem;line-height: 2.91rem;background: #fff;overflow: hidden;border-bottom: 1px solid #e3e3e3;}
+.knowledge .typeFirst,.pk_select .typeFirst,
+.knowledge .typeSecond,.pk_select .typeSecond,
+.knowledge .typeThird,.pk_select .typeThird{width: 33%;height: 100%;text-align: center;}
+.knowledge .typeSecond,.pk_select .typeSecond{border-style: none solid;border-width: 1px;border-color: #e6e6e6;; }
+.knowledge dl.typeDL{padding-top: 3%;overflow: hidden;background: #f3f4f6;}
+.knowledge dt.title{width: 33.3%;height: 2.79rem;margin: .83rem 4.2%;line-height: 2.79rem;text-align: center;border: 1px solid #5f549e;}
+.knowledge .productItem{float: left;width:44%;margin: 0 0 .83rem 4%;color: #ff6600;background: #fff;border: 1px solid #5f549e;border-radius: 5px;box-sizing: border-box;}
+.knowledge .productItem .haveImg{height: 9.29rem;padding: .75rem 6%;}
+.knowledge .productItem img.orderListProduct{height: auto;width: auto;max-width: 100%;max-height: 100%;}
+.knowledge .productItem div.name{text-align:center;width: 70%;height: 3.2rem;margin: 0 auto;word-break:break-all;overflow:hidden;color:#000;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.knowledge .productItem div.specifications{padding: 0 15%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #999;text-align: center;}
+.knowledge .productItem div.price{width: 70%;margin: 0 auto;margin-bottom:.7rem;text-align: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.knowledge .user_info{margin-top: 6.58rem;}
+.knowledge .change_info_btn{height: 2.79rem;width: 80%;display: block;margin:.5rem auto;background: #5f549e;border-radius: 15px;color: #fff;}
+/*产品基础知识详情*/
+.knowledge_detail .include_product{border-top: .542rem solid #e2e2e2;height: 18rem;overflow: hidden;max-height: 100%;margin: 0 auto;padding: 2rem 10%;margin-top: 2.79rem;}
+.knowledge_detail .productImg{width: auto;height: auto;max-width: 100%;max-height: 100%;}
+.knowledge_detail .productDetials{width:80%;margin: 0 auto;}
+.knowledge_detail .productDetials div{padding:.3rem 0;font-size: 1.1rem;border-bottom: 1px solid #e2e2e2;}
+.knowledge_detail .productDetials .productPrice em{display:inline-block;width:40%;font-weight:bold;color: #d8333c;}
+.knowledge_detail .productDetials .productPrice .exchangeBtn{width: 32%;padding: .35rem 5px;margin: .2rem 0;color:#fff;background:#5f549e;border-radius: 15px;border: 1px solid transparent;}
+.knowledge_detail .productDetials .productPrice .exchangeBtn:active{color:#5f549e;background:#fff;border-color: #5f549e;}
+.knowledge_detail .productDetials .productInfo{color:#999;border: none;}
+/*我的PK*/
+.pk{position: absolute;z-index:-1;height: 100%;background: #f6f6f6;}
+.pk .search{width: 64.4%;height:2.75rem;margin: 1rem auto;color: #999;background:#fff;border: 1px solid #cda9d7;border-radius: 3px;}
+.pk .search input{width: 73%;display: block;}
+.pk .pkIcon{position: relative;left: -7%;display: block;width: 13.2%;}
+.pk .searchIcon{display: block;width: 10%;height:inherit;background: url(../images/selectIcon.png) no-repeat left center/100%;}
+.pk .pkShow{position:relative;z-index:-1;background: url(../images/pk-bg.png) no-repeat top;background-size: 100%;}
+.pk .meInfo{width: 26.7%;margin:0 26.7% 0 10%;}
+.pk .TAInfo{width: 26.7%;}
+.pk .pkShow .addWinIcon{display: block;width: 67%;margin: .83rem auto .42rem;opacity: 0;}
+.pk .winIcon{width:80%;margin:0 auto;background: url(../images/winIcon-bg.png) no-repeat top;background-size: 100%;}
+.pk .winIcon .myIcon{position: relative;z-index: -1;border-radius: 50%;}
+.pk .winIcon .pkerName{position: relative;top: -2.1rem;text-align: center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.pk .TAInfo .winIcon{height: 7.8rem;background: url(../images/failIcon-bg.png) no-repeat top;background-size: 100%;}
+.pk .meInfo .yeji{font-size:.9rem;position:relative;top:-1rem;height:1.875rem;line-height: 1.875rem;color: #999;text-indent:25%;background:url(../images/achievementRed.png) no-repeat 9%;background-size:16%;border: 1px solid #ff5350;border-radius: 3px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;left: -3%;width: 104%;}
+.pk .meInfo .yeji em{font-size:.9rem;color: #ff5350;}
+.pk .TAInfo .yeji{font-size:.9rem;position:relative;top:-1rem;height:1.875rem;line-height: 1.875rem;color: #999;text-indent:25%;background:url(../images/achievementBlack.png) no-repeat 9%;background-size:16%;border: 1px solid #333;border-radius: 3px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;left: -3%;width: 104%;}
+.pk .TAInfo .yeji em{font-size:.9rem;color: #333;}
+.pk .ranking{background: #f6f6f6;}
+.pk .ranking > div{width: 21%;height: 7.9rem;margin-right: 7%;}
+.pk .ranking .yesterday{margin-left: 10.8%;}
+.pk .ranking .first_cup_parent{background: url(../images/yesterday-bg.png) no-repeat center bottom / 100%;}
+.pk .ranking .winCup{line-height: 180%;font-size:.8rem;width:49%;height: 2.5rem;margin:2.2rem auto 0;color:#fff;text-align:center;background:#f39800 url(../images/cup_bg.png) no-repeat center / 100% 100%;}
+.pk .ranking .first_cup{margin-top: 1.66rem;background-color: #ff514a;}
+.pk .ranking .statement{margin-top: .7rem;color:#9e5eb6;text-align: center;}
+.pk .ranking .statement em{font-family:"微软雅黑";font-weight: bold;}
+.pk .footer{position:fixed;bottom:0;width:100%;height:29.8%;background: url(../images/bottom-bg.png) no-repeat bottom center/100% 100%;}
+.pk .footer .PKSystem{display: block;width:56%;height:20%;margin:3rem auto 9%;text-indent: 10%;background:#fff url(../images/PKSystemIcon.png) no-repeat 28%;background-size: 11%;border-radius: 3px;}
+.pk .footer .rewardSystem{display: block;width:56%;height:20%;margin: 0 auto;text-indent: 10%;background: #fff url(../images/rewardSystemIcon.png) no-repeat 28%;background-size: 11%;border-radius: 3px;}
+.pk .pkResult img{position:fixed;top:20%;left:20%;z-index:3;width: 62%;}
+.pk .rule_screen{position:fixed;top:15%;left:10%;z-index: 2;width: 70%;height: 72%;padding:4% 5%;background: #fff;border-radius: 7px;}
+.pk .rule_screen img{display:block;width: 8%;margin:0 0 4% 92%;}
+.pk .rule_screen .title{font-size:1.2rem;text-align: center;}
+/*pk对象选择*/
+.pk_select ul li span{display: inline-block;width: 47.5%;}
+.pk_select ul li span.number{padding-right: 5%;font:normal 1.1rem/100% "微软雅黑";color:#999;text-align: right;}
+/*合作网店*/
+.store_partner ,.order_index{position:absolute;height: 100%;background: #f2f2f2;}
+.store_partner > .title{margin-top:6rem;text-align: center;font: bold 1.6rem/2rem "微软雅黑";color: #5f549e;}
+.store_partner ul{padding-left: 3%;}
+.store_partner li{float:left;width: 27%;margin:3.2rem 0 0 4%;}
+.store_partner li img{box-shadow: 0px 0px 6px #999;border-radius: 50%;}
+/*我的业绩*/
+.order_index .this{height: 11.5rem;color:#fff;background: #7064aa url(../images/popbox-right.png) no-repeat 90% center /3.5%;}
+.order_index .last{height: 7.75rem;color:#fff;background: #7f75b5 url(../images/popbox-right.png) no-repeat 90% center /3.5%;}
+.order_index .history{height: 4rem;padding-left:18%;margin-top:.7rem;font:1.2rem/4rem "微软雅黑";background-color: #fff;background-image:url(../images/popbox-right.png),url(../images/income_history_icon.png);background-repeat: no-repeat, no-repeat;background-position: 90%,7%;background-size: 3.5%,7%;  }
+.order_index > div > a:-webkit-any-link{display:block;height:100%;color: #fff;}
+.order_index .this span{display: inline-block;margin: 2.2rem 0 0 7.5%;font-size: 1.25rem;}
+.order_index .this em{font-size: 2.8rem;}
+.order_index .last span{display: inline-block;margin: 1.2rem 0 0 7.5%;font-size: 1.25rem;}
+.order_index .last em{font-size: 2rem;}
+.order_index .invitationHistoryPage {position: absolute;top: 5%;left: 105%;z-index: 3;width: 90%;height: 90%;background: #fff;border-radius: 5px;}
+.order_index .closeIcon {float: right;width: 8.5%;margin: .5rem 3%;}
+.order_index .historyTitle {height: 3rem;line-height: 3rem;border-bottom: 1px solid #737373;}
+.order_index .historyTitle ul{overflow: hidden;}
+.order_index .invitationHistoryPage li {float: left;width: 25%;text-align: center;}
+.order_index .historyContent{position: absolute;width: 100%;height: 80%;overflow: hidden;}
+.order_index .historyContent ul{height: 4rem;border-bottom: 1px solid #D3D3D3;}
+.order_index .invitationHistoryPage li {display: flex;display: -webkit-flex;display: -webkit-box;align-items: center;-webkit-align-items: center;-webkit-box-align: center;justify-content: center;-webkit-justify-content: center;-webkit-box-pack: center;float: left;width: 33%;height: 100%;text-align: center;}
+/*业绩*/
+.order_month nav.sum{position:fixed;top:2.79rem;width:100%;font: bold 1.2rem/2.79rem "微软雅黑";color:#fff;text-align: center;background: #5f549e;border-top: 1px solid #d9d9d9;}
+.order_month dl {margin-top: 5.7rem;}
+.order_month .noOrderDT {padding: 16.5rem 0 0 0;text-align: center;background: url(../images/noOrderImg.png) no-repeat center 8.2rem;background-size: 28.3%;}
+.order_month .noOrderDT +dd {padding: 1px 0;}
+.order_month .listItems {overflow: hidden;padding: 1px 0 .6rem;margin-top: .33rem;color: #ff6600;background: #fff;border-bottom: 1px solid #d9d9d9;}
+.listItems .productImg {width: 25%;margin: .33rem 3% 0;height: 6rem;}
+.listItems .productImg img{width: auto;height: auto;max-width: 100%;max-height: 100%;}
+.listItems .num {width: 66%;margin-top: .33rem;font-weight: bold;}
+.listItems .productName {width: 66%;margin-bottom: .33rem;font-size: 1.1rem;color: #000;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.listItems .price {width: 40%;}
+/*退换货统计*/
+.product_return{position: absolute;height: 100%;background: #f0edeb;}
+.product_return .selectBabysOption{width: 95%;margin: .58rem auto;border-radius: 5px;background: #fff;}
+.product_return .selectBabysOption li.selectBabyOrMom {border-bottom: 1px solid #f0edeb;}
+.product_return .selectBabysOption li {height: 2.79rem;}
+.product_return .selectBabysOption .name {width: 25%;margin-left: 3%;}
+.product_return .selectBabysOption img {display: block;width: 2.2%;margin: 0 5.5% 0 2.3%;}
+.product_return .writeQuestion{width: 90%;padding: .5rem 2.5%;margin: .58rem auto;border-radius: 5px;background: #fff;}
+.product_return .writeQuestion textarea {width: 100%;border: none;-webkit-appearance: none;resize: none;}
+.product_return button.submit_question {display: block;width: 95%;margin: .58rem auto;height: 2.83rem;color: #fff;background: #5f549e;border-radius: 5px;}
+/*忘记密码*/
+.forget_password .reset_form{margin-top:2rem}
+.forget_password .reset_form li.checkCode input{width: 65%;}
+.forget_password .reset_form .forgetPwd{width: 30%;}
+/*美管退换货统计*/
+.meiguan_renturn .search_date{position: fixed;top: 4rem;left: 15%;width: 53%;height: 2rem;text-indent: 2%;border: 1px solid #999;border-radius: 5px;}
+.meiguan_renturn .search{position: fixed;top: 4rem;height: 2rem;padding: 0 3%;right: 12%;color: #fff;border-radius: 8px;background: #5f549e;}
+.meiguan_renturn .result{padding: 0 5%;margin-top: 8rem;}
+.meiguan_renturn .result dt{width: 40%;text-indent: 5%;font: 1.1rem/2rem "微软雅黑";color: #fff;background: #5f549e;}
+.meiguan_renturn .result dd div.item{clear:both;padding:.55rem 3%;margin:1rem 0;border:1px solid #5f549e;}
+.meiguan_renturn .result dd div.item div{overflow: hidden;}
+.meiguan_renturn .result dd div.item > div{line-height: 2rem;}
+.meiguan_renturn .result dd div.item button{width:35%;padding: .2rem 2%;margin-top:.5rem;background: #5f549e;color: #fff;border-radius: 15px;}
+.meiguan_renturn .allScreen{z-index: 4;}
+.meiguan_renturn .invitationHistoryPage {position: fixed;top: 0;left: 100%;z-index: 4;width: 100%;height: 100%;background: #fff;border-radius: 5px;}
+.meiguan_renturn .closeIcon {float: right;width: 8.5%;margin: .5rem 3%;}
+.meiguan_renturn .historyTitle {height: 3rem;line-height: 3rem;font-size: 1.2rem;text-align: center;border-bottom: 1px solid #737373;}
+.meiguan_renturn .historyContent {position: fixed;top: 8rem;width: 100%;height: 80%;overflow: scroll;}
+.meiguan_renturn .historyContent li {line-height: 3rem;text-align: center;border-bottom: 1px solid #D3D3D3;}
+.search_block{background: #fff;height: 4rem;position: fixed;top: 2.79rem;width: 100%;border-bottom: 1px solid #999;}
+/*扫码出库*/
+.screenOut .mark{margin: 1rem 0;font: 1.2rem/2rem "微软雅黑";text-align: center;}
+.screenOut input,.screenOut select{display: block;width: 50%;margin: 0 auto;border: 1px solid #999;text-indent: 3%;height: 2rem;}
+.screenOut select{background: url(../images/popbox-right.png) no-repeat 95%/5%;}
+.screenOut button.screenOut_btn {display: block;width: 78%;margin: 4.58rem auto;height: 2.83rem;color: #fff;background: #5f549e;border-radius: 25px;}
+.order_manage .countNavTab{position: fixed;top: 2.79rem;z-index: 3;width: 100%;height: 2.91rem;line-height: 2.91rem;background: #fff;overflow: hidden;border-bottom: 1px solid #e3e3e3;}
+.order_manage .countNavTab div{width: 49%;text-align:center;}
+.order_manage nav .typeFirst{border-right:1px solid #e6e6e6;}
+.day_count{    margin-top: 5.58rem;}
+.order_manage dt,.order_manage ul.item{overflow:hidden;height:2.79rem;line-height:2.79rem;border-bottom: 1px solid #e6e6e6;}
+.order_manage dt div ,.order_manage ul.item li{float: left;width:33%;text-align: center;}
+/*进行中订单列表*/
+.order_ongoing_list .item{font-size: 1.1rem;clear: both;overflow: hidden;border-top: .4rem solid #e3e3e3;border-bottom: 1px solid #e2e2e2;}
+.order_ongoing_list .item:first-of-type{margin-top: 2.79rem;}
+.order_ongoing_list .itemTitle {height: 2.8rem;background: #fff;padding-top: 1px;}
+.order_ongoing_list .itemTitle > .number,.order_ongoing_list .itemTitle > .time {color: #999;margin-right: 3.2%;font-size: 1.1rem;font-family: "宋体";}
+.order_ongoing_list .itemTitle > img {display: block;width: 4%;margin: 0 3%;}
+.order_ongoing_list .itemTitle > .state {margin-right: 3.3%;}
+.order_ongoing_list .item ul{background-color: #f5f5f5;overflow: hidden;}
+.order_ongoing_list .item ul >li >.product_div {height:5rem;margin: .833rem 3.2%;width: 20%;float: left;border: 1px solid #e1e1e1;}
+.order_ongoing_list .item ul >li >.product_div img{height: auto;width: auto;max-width: 100%;max-height: 100%;display: block;margin: 0 auto;}
+.order_ongoing_list .item ul >li > div.name {width: 70%;float: left;color: #3d4244;margin-top: .833rem;height:3.3rem;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+.order_ongoing_list .item ul >li > div.right {float: left;overflow: hidden;margin-right: 3.3%;}
+.order_ongoing_list .item ul >li > div.right .price {color: #d8333c;font-weight: bold;}
+/*进行中订单详情*/
+.order_ongoing_detail .productDetials{padding-top: 1px;margin-top:2.79rem;}
+.order_ongoing_detail .productDetials .productImg{height:20rem;padding:1.1rem 5%;border-bottom: 1px solid #e2e2e2;}
+.order_ongoing_detail .productDetials .productImg img{display:block;margin:0 auto;max-height: 100%;max-width: 100%;height: auto;width: auto;}
+.order_ongoing_detail .productDetials .productName{margin: 0 10%;padding: .6rem 0;font-size: 1.5rem;border-bottom: 1px solid #e2e2e2;font-family: "agency fb" "宋体";}
+.order_ongoing_detail .productDetials .productPrice{color: #d8333c;}
+.order_ongoing_detail .productDetials .productGuige{padding:.5rem 0;margin: 0 10%;font-size: 1.1rem;border-bottom: 1px solid #e2e2e2;color: #575757;}
+.order_ongoing_detail .productDetials .ERcode .name{margin: .5rem 10% 0;color: #A9A9A9;font: 1.2rem/1.8rem "宋体";}
+.order_ongoing_detail .productDetials .ERcode .codeImg{width: 90%;margin: 0 auto;}
+.order_ongoing_detail .productDetials .ERcode .codeImg img{width: 100%;}
+/*佣金提现*/
+.translate_banlance .font{background:url(../images/translate.png) no-repeat 6%/4.5%;text-indent: 12%;margin-top: 1.5rem;color: #666;}
+.translate_banlance .font em{color: #5f549e;}
+.translate_banlance .inputs{border-top: 1px solid #bababa;border-bottom: 1px solid #bababa;height: 3.2rem;line-height: 3.2rem;text-indent: 5%;font-size: 1.1rem;margin-top: .5rem;background: #fff;}
+.translate_banlance .inputs input{margin-left: 3%;}
+.translate_banlance .translate{display: block;margin: 3rem auto;height: 3rem;line-height: 3rem;width: 80%;background: #5f549e;font-size: 1.2rem;color: #fff;border-radius: 25px;-webkit-appearance: none;}

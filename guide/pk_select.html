@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>选择PK对象</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/guide.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".typeFirst").on("click",function(){
+    			$("#typeFirst").show(500);
+    			$(this).addClass("selectedColor");
+    			$(".typeSecond,.typeThird").removeClass("selectedColor");
+    			$("#typeSecond , #typeThird").hide();
+    		});   
+    		$(".typeSecond").on("click",function(){
+    			$("#typeSecond").show(500);
+    			$(this).addClass("selectedColor");
+    			$(".typeFirst,.typeThird").removeClass("selectedColor"); 
+    			$("#typeFirst , #typeThird").hide();
+    		}); 
+    		$(".typeThird").on("click",function(){
+    			$("#typeThird").show(500);
+    			$(this).addClass("selectedColor");
+    			$(".typeFirst,.typeSecond").removeClass("selectedColor");
+    			$("#typeFirst , #typeSecond").hide();
+    		}); 
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap pk_select">
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">选择PK对象</div>
+		</header>
+		<nav class="pkNavTab">
+			<div class="typeFirst selectedColor fl">本店</div>
+			<div class="typeSecond fl">本区</div>
+			<div class="typeThird fl">本市</div>
+		</nav>
+		<ul id="typeFirst">
+			<li><a href="pk.html?张三&123456"><span class="name">张三</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三1&12"><span class="name">张三1</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三2&12342"><span class="name">张三2</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三3&3456"><span class="name">张三3</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三4&346111"><span class="name">张三4</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三5&6"><span class="name">张三5</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三6&4561111"><span class="name">张三6</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三7&12"><span class="name">张三7</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三8&345632323"><span class="name">张三8</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三9&456"><span class="name">张三9</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三10&134632323"><span class="name">张三10</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三11&126"><span class="name">张三11</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三12&12613232"><span class="name">张三12</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?张三13&126132"><span class="name">张三13</span><span class="number">工号：80901245</span></a></li>
+		</ul>
+		<ul id="typeSecond" hidden>
+			<li><a href="pk.html?李四&123456"><span class="name">李四</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四1&12"><span class="name">李四1</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四2&123"><span class="name">李四2</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四3&3456"><span class="name">李四3</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四4&346"><span class="name">李四4</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四5&6"><span class="name">李四5</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四6&456"><span class="name">李四6</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四7&12"><span class="name">李四7</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四8&3456"><span class="name">李四8</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四9&456"><span class="name">李四9</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四10&1346"><span class="name">李四10</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四11&126"><span class="name">李四11</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四12&1261"><span class="name">李四12</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?李四13&1261"><span class="name">李四13</span><span class="number">工号：80901245</span></a></li>
+		</ul>
+		<ul id="typeThird" hidden>
+			<li><a href="pk.html?王五&123456"><span class="name">王五</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五1&12"><span class="name">王五1</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五2&123"><span class="name">王五2</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五3&3456"><span class="name">王五3</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五4&346"><span class="name">王五4</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五5&6"><span class="name">王五5</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五6&456"><span class="name">王五6</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五7&12"><span class="name">王五7</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五8&3456"><span class="name">王五8</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五9&456"><span class="name">王五9</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五10&1346"><span class="name">王五10</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五11&126"><span class="name">王五11</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五12&1261"><span class="name">王五12</span><span class="number">工号：80901245</span></a></li>
+			<li><a href="pk.html?王五13&1261"><span class="name">王五13</span><span class="number">工号：80901245</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>

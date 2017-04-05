@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>产品基础知识</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".typeFirst").on("click",function(){
+    			$("#typeFirst").show();
+    			$(this).addClass("selectedColor");
+    			$(".typeSecond,.typeThird").removeClass("selectedColor");
+    			$("#typeSecond , #typeThird").hide();
+    		});   
+    		$(".typeSecond").on("click",function(){
+    			$("#typeSecond").show();
+    			$(this).addClass("selectedColor");
+    			$(".typeFirst,.typeThird").removeClass("selectedColor"); 
+    			$("#typeFirst , #typeThird").hide();
+    		}); 
+    		$(".typeThird").on("click",function(){
+    			$("#typeThird").show();
+    			$(this).addClass("selectedColor");
+    			$(".typeFirst,.typeSecond").removeClass("selectedColor");
+    			$("#typeFirst , #typeSecond").hide();
+    		}); 
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap knowledge">
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">产品基础知识</div>
+		</header>
+		<nav class="orderNavTab">
+			<div class="typeFirst selectedColor fl">辅食</div>
+			<div class="typeSecond fl">休闲食品</div>
+			<div class="typeThird fl">营养品</div>
+		</nav>
+		<dl class="typeDL" id="typeFirst">
+			<dd>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby</div>
+						<div class="specifications">2888888888g*9 / 盒 </div>
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/1.jpg" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00000000000000</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/long_pro_img.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+			</dd>
+		</dl>
+		<dl class="typeDL" id="typeSecond" hidden>
+			<dd>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby</div>
+						<div class="specifications">2888888888g*9 / 盒 </div>
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/1.jpg" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00000000000000</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/long_pro_img.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+			</dd>
+		</dl>
+		<dl class="typeDL" id="typeThird" hidden>
+			<dd>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/orderListProductImg.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby</div>
+						<div class="specifications">2888888888g*9 / 盒 </div>
+						<div class="price">￥120.00</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/1.jpg" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00000000000000</div>
+					</div>
+				</a>
+				<a href="products_detail.html">
+					<div class="productItem">
+						<div class="haveImg faj">
+							<img src="../static/images/long_pro_img.png" class="orderListProduct"/>
+						</div>
+						<div class="name">Holybaby / 清新草莓营养米粉</div>
+						<div class="specifications">28g*9 / 盒 </div>						
+						<div class="price">￥120.00</div>
+					</div>
+				</a>				
+			</dd>
+		</dl>
+	</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', { mouseWheel: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("#closeHistory").on("click",function(){
+    			$(".allScreen").hide();
+    			$(".invitationHistoryPage").animate({"left":"105%"},500);
+    		});
+    		$("#showHistory").on("click",function(){
+    			$(".allScreen").show();    		
+    			$(".invitationHistoryPage").animate({"left":"5%"},500);    			
+    		});
+    	});
+    </script>
+</head>
+<body onload="loaded()">
+	<div class="wrap order_index">
+		<div class="allScreen" hidden></div>
+		<!--历史积分页-->
+		<div class="invitationHistoryPage" >
+			<img src="../static/images/close-.png" class="closeIcon" id="closeHistory"/>
+			<div class="historyTitle clearfix">
+				<ul>
+					<li>月份</li>
+					<li>营业额</li>
+					<li>收入</li>
+				</ul>
+			</div>
+			<div class="historyContent" id="wrapper">
+				<div id="scroller">
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>10</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+					<ul>
+						<li>2015-09</li>
+						<li>110</li>
+						<li>4242</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">我的业绩</div>
+		</header>
+		<div class="this">
+			<a href="order_this.html">
+				<span class="name">本月业绩</span><br/><span class="value">￥&nbsp;<em>111123320</em></span>
+			</a>
+		</div>
+		<div class="last">
+			<a href="order_last.html">
+				<span class="name">上月业绩</span><br/><span class="value">￥&nbsp;<em>119999320</em></span>
+			</a>
+		</div>
+		<div class="history" id="showHistory">收入流水</div>
+	</div>
+</body>
+</html>

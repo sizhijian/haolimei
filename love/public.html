@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/love.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".typeFirst").on("touchend",function(){
+    			$("#typeFirst").show();
+    			$(this).addClass("selectedColor");
+    			$(".typeSecond").removeClass("selectedColor");
+    			$("#typeSecond").hide();
+    		});   
+    		$(".typeSecond").on("touchend",function(){
+    			$("#typeSecond").show();
+    			$(this).addClass("selectedColor");
+    			$(".typeFirst").removeClass("selectedColor"); 
+    			$("#typeFirst").hide();
+    		}); 
+    		$("#search_pro").on("touchend",function(){
+    			$("#typeWrap , .orderNavTab , #searchWrap").toggle();
+    			$(this).toggleClass("change_icon");
+    		});
+    	});
+    	$(document).resize(function(){
+    		location.reload();
+    	});
+    </script>
+</head>
+<body bgcolor="#f3f3f3">
+	<div class="wrap public">
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">善款公布</div>
+			<span class="search" id="search_pro">搜索</span>
+		</header>
+		<div id="searchWrap" hidden>
+			<div class="searchBox"><input type="text" placeholder="请输入项目名称进行搜索"><button>搜索</button></div>
+			<div class="resultBox">
+				<div class="item">
+					<div class="name">项目名称：</div>
+					<div class="value">公益项目啊</div>
+				</div>
+				<div class="item">
+					<div class="name">项目属性：</div>
+					<div class="value">进行中</div>
+					<div class="value" hidden>已完成</div>
+				</div>
+				<div class="item">
+					<div class="name">共筹善款： </div>
+					<div class="value"><em>500</em>元</div>
+				</div>
+				<div class="item">
+					<div class="name">已筹善款： </div>
+					<div class="value"><em>450</em>元</div>
+				</div>
+				<div class="item">
+					<div class="name">善款走向：</div>
+					<div class="value">黁UI怒inUI法萨芬撒发生发生黁UI怒inUI法萨芬撒发生发生黁UI怒inUI法萨芬撒发生发生</div>
+				</div> 
+			</div>
+		</div>
+		<nav class="orderNavTab">
+			<div>
+				<div class="typeFirst fl selectedColor">进行中</div>
+				<div class="typeSecond fl">已结束</div>
+			</div>
+			
+		</nav>
+		<div id="typeWrap">
+			<div id="typeFirst">
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">进行中</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">已筹善款： </div>
+						<div class="value"><em>450</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+			</div>
+			<div id="typeSecond" hidden>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">已完成的中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">已完成</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">共筹善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">已完成的中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">已完成</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">共筹善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">已完成的中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">已完成</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">共筹善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+				<div class="item_box">
+					<div class="item">
+						<div class="name">项目名称：</div>
+						<div class="value">已完成的中国公益项目</div>
+					</div>
+					<div class="item">
+						<div class="name">项目属性：</div>
+						<div class="value">已完成</div>
+					</div>
+					<div class="item">
+						<div class="name">目标善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">共筹善款： </div>
+						<div class="value"><em>500</em>元</div>
+					</div>
+					<div class="item">
+						<div class="name">善款走向：</div>
+						<div class="value">中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目中国公益项目</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

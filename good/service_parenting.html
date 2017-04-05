@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>专属服务-专业育儿</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//轮播图逻辑
+    		$(".includeIcon").height($(".includeIcon").width());
+    		var slider = Swipe(document.getElementById('scroll_img'), {
+				auto: 3000,
+				continuous: true,
+				callback: function(pos) {
+					var i = bullets.length;
+					while (i--) {
+						bullets[i].className = ' ';
+					}
+					bullets[pos].className = 'on';
+				}
+			});
+			var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+			$('.scroll_position_bg').css({
+				width:$('#scroll_position').width()
+			});
+			$(".titlesBar").click(function(){
+				location.href="service_parenting_article_list.html";
+			});
+			$("#show_sub_list").click(function(){
+				$(".sub_list").toggle();
+			});
+			//控制头像样式
+			$("#babyIcon").height($("#babyIcon").width());
+			//*传给scheduleNum相应的值，就可以显示进度*/
+				var scheduleNum = "30%";
+				$(".needleIcon ,.needleStartBar,.needleLongBar").animate({"left":scheduleNum},1000);
+		});
+    </script>
+</head>
+<body>
+	<div class="wrap professionalParenting">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="location.href='index.html'"/>
+			<div class="title">专业育儿</div>
+			<img src="../static/images/msgMore.png" class="msg" id="show_sub_list"/>
+		</header>
+		<ul class="sub_list" hidden="">
+			<li><a href="service_parenting_article_list.html">宝贝食谱</a></li>
+			<li><a href="service_parenting_article_list.html">疫苗提醒</a></li>
+			<li><a href="service_parenting_article_list.html">妈妈阅读</a></li>
+			<li><a href="service_parenting_article_list.html">生理必知</a></li>
+			<li><a href="service_parenting_article_list.html">疾病护理</a></li>
+		</ul>
+		<div>
+			<article>
+			  <!--scroll-->
+			  <div class="scroll relative">
+			    <div class="scroll_box" id="scroll_img">
+		        <ul class="scroll_wrap">
+		          <li><a href="service_parenting_article_list.html"><img src="../static/images/momsFoodMenuImg.png" width="100%" /></a></li>
+		          <li><a href="service_parenting_article_list.html"><img src="../static/images/momsFoodMenuImg1.png" width="100%" /></a></li>
+		          <li><a href="service_parenting_article_list.html"><img src="../static/images/momsFoodMenuImg2.png" width="100%" /></a></li>
+		        </ul>
+			    </div>
+		      <ul class="scroll_position" id='scroll_position'>
+		          <li class="on"><a href="javascript:void(0);">1</a></li>
+		          <li><a href="javascript:void(0);">2</a></li>
+		          <li><a href="javascript:void(0);">3</a></li>
+		      </ul>
+			  </div>
+			  <!--scroll-->
+		  </article>
+		</div>
+		<div class="vaccination">
+			<div class="babyIcon fl" id="babyIcon">
+				<img src="../static/images/icon.png">
+				<input class="update_img_input" type="file" name="" id="">
+			</div>
+			<span class="babyName fl">Cindy<em class="babySex">小公主</em></span>
+			<p class="babyAge fl">1岁3个月 23天</p>
+			<div class="NeedleAction fl">
+				<img src="../static/images/needleIcon.png" class="needleIcon"/>
+				<dl class="needleBGBar">
+					<dt class="needleStartBar"></dt>
+					<dd class="needleLongBar"></dd>
+				</dl>
+			</div>
+			<div class="vaccinationOption clearfix">
+				<a href="service_parenting_inoculation_set.html">
+					<div class="vaccinationDay"><em>92</em>天后可接种</div>
+					<div class="vaccinationType"><div class="name">百白破</div><em>（ 第1 剂 / 共4 剂 ）</em></div>
+				</a>
+			</div>
+			<div class="vaccinationRecord"><a href="service_parenting_inoculation_history.html">接种记录</a></div>
+			<div class="vaccineKnowledgeBase"><a href="service_parenting_inoculation_know.html">疫苗知识库</a></div>
+		</div>
+		<div class="titlesBar clearfix">
+			<a href="service_parenting_article_list.html"><img src="../static/images/momReadIcon.png" class="icon fl"/></a>
+			<div class="verticalLine fl"></div>
+			<a href="service_parenting_article_detail.html">
+				<span class="title fl">妈妈阅读</span>
+				<p class="con fl">我们靠自己 — 励志教育绘本推荐</p>
+				<em class="info fl">培养孩子自信，分享，和感恩</em>
+			</a>
+		</div>
+		<div class="titlesBar">
+			<img src="../static/images/lifeKnowsIcon.png" class="icon fl"/>
+			<div class="verticalLine lifeKnows fl"></div>
+			<span class="title lifeKnows fl">生理必知</span>
+			<p class="con fl">这些生理知识你知道吗？</p>
+			<em class="info fl">好立美妈妈大讲堂开课啦</em>
+		</div>
+		<div class="titlesBar">
+			<img src="../static/images/diseaseNursingIcon.png" class="icon fl"/>
+			<div class="verticalLine diseaseNursing fl"></div>
+			<span class="title diseaseNursing fl">疾病护理</span>
+			<p class="con fl">发烧不可怕，关键在护理</p>
+			<em class="info fl">除了擦酒精，你还可以这样做</em>
+		</div>
+		<ul class="findServiceBottom">
+			<li id="goExpertOnline">
+				<a href="service_consult.html">
+					<img src="../static/images/expertOnlineIcon_.png"/>
+					<div>专家在线</div>
+				</a>
+			</li>
+			<li>
+				<img src="../static/images/professionalParentingIcon.png"/>
+				<div>专业育儿</div>				
+			</li>
+			<li id="goNutritionCustom">
+				<a href="service_nutrition.html">
+					<img src="../static/images/nutritionCustomIcon_.png"/>
+					<div>营养订制</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

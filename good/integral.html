@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>我的积分</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrap myIntegral">		
+		<div class="allScreen" hidden></div>
+		<div class="integralRuleContent" hidden>
+			<img src="../static/images/close-.png" class="close"/>
+			积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</div>
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">我的积分</div>
+		</header>
+		<div class="occlusion">
+			<div class="myIntegralArea">我的积分：<span class="integraVal">2000</span>&nbsp;
+				可抵现金：<em>10</em> 元
+			</div>
+			<img src="../static/images/getIntegralIcon.png" class="integralRuleIcon fl"/>
+			<a href="integral_exchange.html"><img src="../static/images/integralExchange.png" class="integralExchangeIcon fl"/></a>
+			<div class="integralRule fl">规则说明</div>
+			<div class="integralExchangeDiv fl">积分兑换</div>
+			<nav class="meiBean clearfix">
+				<div class="meiBeanIn meiBeanSelected fl">积分收入(+<i>0</i>积分)</div>
+				<div class="meiBeanOut fl">积分支出(-<i>0</i>积分)</div>
+			</nav>
+		</div>
+		<ul id="meiBeanIn">
+			<li>
+				<div class="name fl">关注获赠</div>
+				<div class="num fl">+<i>100</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">签到积分</div>
+				<div class="num fl">+<i>20</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">推荐用户</div>
+				<div class="num fl">+<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>15</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>15</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>25</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+			<li>
+				<div class="name fl">购买产品猴菇小馒头 160g一盒</div>
+				<div class="num fl">+<i>25</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+				<div class="validityPeriod fl">有效期至：2014-12-31</div>
+			</li>
+		</ul>
+		<ul id="meiBeanOut" hidden>
+			<li>
+				<div class="name fl">购物抵扣</div>
+				<div class="num fl">-<i>25</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">礼品兑换</div>
+				<div class="num fl">-<i>15</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>5</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>10</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>10</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+			<li>
+				<div class="name fl">购买本U呼呼呼呼呼呼一盒</div>
+				<div class="num fl">-<i>10</i>积分</div>
+				<div class="time fl">2014-12-31 06:00：35</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

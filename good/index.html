@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//轮播图逻辑
+			var slider = Swipe(document.getElementById('scroll_img'), {
+				auto: 3000,
+				continuous: true,
+				callback: function(pos) {
+					var i = bullets.length;
+					while (i--) {
+						bullets[i].className = ' ';
+					}
+					bullets[pos].className = 'on';
+				}
+			});
+			var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+			$('.scroll_position_bg').css({width:$('#scroll_position').width()});
+			$("#scroll_position").css("bottom",".75rem");
+			//控制头像样式
+			$(".includeIcon").height($(".includeIcon").width());
+			//点击积分
+			$(".integralIcon ,.integra ,.integralAppendInfo").on("click",function(){
+				window.location.href="integral.html";
+			});
+			//点击签到
+			$(".signIcon , .sign").click(function(){
+				if ($(".sign").attr("signed")=="false") {
+					layer.msg('签到成功，明天继续哦');
+					$(".sign").css("color","#999").attr("signed","true");
+					$(".integraVal").text(+$(".integraVal").text()+20);
+					$(".integralAppendInfo em").text(+$(".integraVal").text()/200)
+				} else{
+					layer.msg('今天已签到，明天继续哦');
+				}
+			});
+			//窗口重置控制头像样式
+			$(window).resize(function(){
+				$(".includeIcon").height($(".includeIcon").width());				
+			});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap myGoodHome">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg"/>
+			<div class="title">我的好家</div>
+			<img src="../static/images/login-user.png" class="msg" onclick="location.href='user_info.html'"/>			
+		</header>
+		<div class="carouselFigure">
+			<article>
+			  <!--scroll-->
+			  <div class="scroll relative">
+			    <div class="scroll_box" id="scroll_img">
+		        <ul class="scroll_wrap">
+		          <li><a href="index_article_detail.html"><img src="../static/images/3.jpg" width="100%" /></a></li>
+		          <li><a href="index_article_detail.html"><img src="../static/images/2.jpg" width="100%" /></a></li>
+		          <li><a href="index_article_detail.html"><img src="../static/images/1.jpg" width="100%" /></a></li>
+		        </ul>
+			    </div>
+		      <ul class="scroll_position" id='scroll_position'>
+		          <li class="on"><a href="javascript:void(0);">1</a></li>
+		          <li><a href="javascript:void(0);">2</a></li>
+		          <li><a href="javascript:void(0);">3</a></li>
+		      </ul>
+			  </div>
+			  <!--scroll-->
+		  </article>
+		</div>
+		<div class="momInfo">
+			<form action="" method="post">
+				<div class="includeIcon faj">
+					<img src="../static/images/icon.png"/>
+					<input class="update_img_input" type="file" name="" id="">
+				</div>
+			</form>
+			<div class="helloName">
+				hi ~ <span>Cindy</span>
+			</div>
+			<div class="helloName">希望我的宝贝健康成长!</div>
+			<div class="integralSign fa">
+				<img src="../static/images/integralIcon.png" class="integralIcon"/>
+				<div class="integra">我的积分：<span class="integraVal">2000</span></div>
+				<img src="../static/images/screenGetIntegralIcon.png" class="screenGetIntegral"/>
+				<div class="screenGet">扫码获赠</div>
+				<img src="../static/images/signIcon.png" class="signIcon"/>
+				<div class="sign" signed="false">天天签到</div>
+			</div>
+			<div class="integralAppendInfo">可抵现金：<em>10</em> 元</div>
+		</div>
+		<ul class="nav_ul">
+			<li class="personServiceIcon fl">
+				<a href="service_consult.html">
+					<img src="../static/images/personServiceIcon.png"/>
+					<div>专属服务</div>
+				</a>
+			</li>
+			<li class="momBBS fl">
+				<a href="mom_bbs.html">
+					<img src="../static/images/momBBSIcon.png"/>
+					<div>妈妈论坛</div>				
+				</a>
+			</li>
+			<li class="publicWelfare fl">
+				<a href="../love/mine.html">
+					<img src="../static/images/publicWelfareIcon.png"/>
+					<div>我的立爱</div>				
+				</a>
+			</li>
+			<li class="healthInformation fl">
+				<img src="../static/images/healthInformationIcon.png"/>
+				<div>好家资讯</div>				
+			</li>
+			<li class="salesPromotion clearfix fl">
+				<a href="active_article_detail.html">
+					<img src="../static/images/salesPromotionIcon.png"/>
+					<div>促销活动</div>				
+				</a>
+			</li>
+			<li class="productsShowIcon fl">
+				<a href="products.html">
+					<img src="../static/images/productsShowIcon.png"/>
+					<div>产品展示</div>				
+				</a>
+			</li>
+			<li class="myOrders fl">
+				<a href="orders.html">
+					<img src="../static/images/myOrdersIcon.png"/>
+					<div>我的订单</div>				
+				</a>
+			</li>
+			<li class="recommendedAwards fl">
+				<a href="recommended.html">
+					<img src="../static/images/recommendedAwardsIcon.png"/>
+					<div>推荐有奖</div>		
+				</a>
+			</li>
+		</ul>
+		<a href="index_article_detail.html">
+			<nav class="newInfomation">
+				<div class="mark fl"></div>
+				<div class="barContent fl">
+					<span>最新资讯</span>
+					<div>江中好立美-中国婴幼儿健康食品开创者</div>
+				</div>
+			</nav> 
+		</a>
+		<a href="index_article_detail.html">
+			<nav class="hotPonint">
+				<div class="mark fl"></div>
+				<div class="barContent fl">
+					<span>热门话题</span>
+					<div>预防宝宝生病，我是这样做的！</div>
+				</div>
+			</nav>
+		</a>
+		<dl class="productDL">
+			<dt class="productsTitle fa"><div class="mark"></div>店长推荐</dt>
+			<dd>
+				<ul>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/wrong_product.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/1.jpg"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/vaccinationBG.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/long_pro_img.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>	
+					</a>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="productDL">
+			<dt class="productsTitle fa"><div class="mark"></div>热卖商品</dt>
+			<dd>
+				<ul>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/Ca.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/Ca.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/Ca.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>
+					</a>
+					<a href="products_detail.html">
+						<li class="productItem">
+							<div class="haveImg faj">
+								<img src="../static/images/Ca.png"/>
+							</div>
+							<div class="productInfoBG">
+								<p class="productName">清新草莓营养米粉</p>
+								<p>28g*9 / 盒 <em class="price">￥128</em>	 </p>
+							</div>
+						</li>	
+					</a>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</body>
+</html>

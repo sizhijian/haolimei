@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>帮帮我吧</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/love.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    	});
+    </script>
+</head>
+<body bgcolor="#f0edeb">
+	<div class="wrap help">
+		<span class="fixedMark">9</span>
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">帮帮我吧</div>
+			<img src="../static/images/msgMore.png" class="msg" onclick="location.href='help_list.html'">
+		</header>
+		<form action="" method="post">
+			<ul class="top">
+				<li>我要申请救助</li>
+				<li>
+					<div class="item">
+						<div class="name">申请人姓名</div>
+						<div class="value">
+							<input type="text" name="" id="" value="" placeholder="请输入申请人姓名"/>
+						</div>
+					</div>
+					<div class="item">
+						<div class="name">身份证号</div>
+						<div class="value">
+							<input type="text" name="" id="" value="" placeholder="请输入申请人身份证号"/>
+						</div>
+					</div>
+					<div class="item">
+						<div class="name">联系电话</div>
+						<div class="value">
+							<input type="text" name="" id="" value="" placeholder="请输入申请人联系电话"/>
+						</div>
+					</div>
+					<div class="item">
+						<div class="name">住址</div>
+						<div class="value">
+							<input type="text" name="" id="" value="" placeholder="请输入申请人住址"/>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="second">
+				<li>申请救助原因</li>
+				<li>
+					<div class="writeQuestion">
+						<textarea class="quest_textarea" name="" rows="5" cols="" placeholder="请尽量详细描述并确保真实性~"></textarea>
+						<div class="update_img" >
+							<img src="../static/images/long_pro_img.png">
+						</div>
+						<button class="quesBottomBar">点击进行上传图片
+							<input class="update_img_input" type="file">
+						</button>
+					</div>
+				</li>
+			</ul>
+			<footer class="footer">
+				<input class="submit_btn" type="submit" value="提交"/>
+			</footer>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+		<title>订单确认</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+		<script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jsAddress.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				addressInit('cmbProvince', 'cmbCity', 'cmbArea');
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap integral_exchange_confirm">			
+			<header class="header fa">
+				<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+				<div class="title">编辑收货地址</div>
+			</header>
+			<dl class="consignee_name">
+				<dt>收货人姓名</dt>
+				<dd><input type="text" name="" id="" value="张三" placeholder="请输入收货人姓名"/></dd>
+			</dl>
+			<dl class="consignee_phone">
+				<dt>收货人手机号</dt>
+				<dd><input type="text" name="" id="" value="13835835535" maxlength="11" placeholder="请输入收货人手机号"/></dd>
+			</dl>
+			<dl class="consignee_phone">
+				<dt>所在地址</dt>
+				<dd class="cmbProvince"><select id="cmbProvince"></select></dd>
+				<dd class="cmbCity"><select id="cmbCity"></select></dd>
+				<dd class="cmbArea"><select id="cmbArea"></select></dd>
+			</dl>
+			<dl class="consignee_phone">
+				<dt>详细地址</dt>
+				<dd><input type="text" name="" id="" value="" placeholder="请输入街道地址"/></dd>
+			</dl>
+			<div id="set_default_address" class="setDefault fa" select="false">
+				<div>设置为默认地址</div>
+				<img src="../static/images/unselectedIcon.png" class="unselected"/>
+				<img src="../static/images/selectedIcon.png" class="selected" style="display: none;"/>
+			</div>
+			<div class="consignee_phone">
+			<button id="delect_address" class="delect_address">删除地址</button>
+			</div>
+			<button class="bottomBtn" id="" onclick="location.href='integral_exchange_confirm.html'">编辑完成</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>妈妈论坛</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".includeIcon").height($(".includeIcon").width());
+    		var slider = Swipe(document.getElementById('scroll_img'), {
+				auto: 3000,
+				continuous: true,
+				callback: function(pos) {
+					var i = bullets.length;
+					while (i--) {
+						bullets[i].className = ' ';
+					}
+					bullets[pos].className = 'on';
+				}
+			});
+			var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+			$('.scroll_position_bg').css({
+				width:$('#scroll_position').width()
+			});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap motherForum">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">妈妈论坛</div>
+		</header>
+		<div>
+			<article>
+			  <!--scroll-->
+			  <div class="scroll relative">
+			    <div class="scroll_box" id="scroll_img">
+		        <ul class="scroll_wrap">
+		          <li><a href="mom_bbs_block.html"><img src="../static/images/motherForumBanner.png" width="100%" /></a></li>
+		          <li><a href="mom_bbs_block.html"><img src="../static/images/motherForumBanner1.png" width="100%" /></a></li>
+		          <li><a href="mom_bbs_block.html"><img src="../static/images/motherForumBanner2.png" width="100%" /></a></li>
+		        </ul>
+			    </div>
+		      <ul class="scroll_position" id='scroll_position'>
+		          <li class="on"><a href="javascript:void(0);">1</a></li>
+		          <li><a href="javascript:void(0);">2</a></li>
+		          <li><a href="javascript:void(0);">3</a></li>
+		      </ul>
+			  </div>
+			  <!--scroll-->
+		  </article>
+		</div>
+		<div class="search">
+			<form action="" method="post">
+				<input type="" name="" id="" value="" placeholder="Search..."/>
+				<button class="search_btn" onclick="location.href='mom_bbs_search_list.html'"></button>
+			</form>
+		</div>
+		<ul class="myInfoBtns">
+			<li class="myInfoBtnsItem fl">
+				<a href="mom_bbs_list.html">
+					<img src="../static/images/myPostIcon.png">
+					<div>我的帖子</div>
+				</a>
+			</li>
+			<li class="myInfoBtnsItem fl">
+				<a href="mom_bbs_reply.html">
+					<img src="../static/images/myReplyIcon.png">
+					<div>我的回复</div>
+				</a>
+			</li>
+			<li class="myInfoBtnsItem fl">
+				<img src="../static/images/myPrivateLettersIcon.png">
+				<div>我的私信</div>
+			</li>
+			<li class="myInfoBtnsItem fl">
+				<a href="system_info.html">
+					<img src="../static/images/systemInformation.png">
+					<div>系统信息</div>
+				</a>
+			</li>
+		</ul>
+		<a href="mom_bbs_block.html">
+			<div class="titlesBar">
+				<img src="../static/images/babyDiaryIcon.png" class="icon fl">
+				<div class="verticalLine fl"></div>
+				<span class="title fl">宝贝日记</span>
+				<p class="con fl">今天小南瓜学会扶着床走路啦！</p>
+			</div>
+		</a>
+		<div class="titlesBar">
+			<img src="../static/images/growthTimeIcon.png" class="icon fl">
+			<div class="verticalLine growthTime fl"></div>
+			<span class="title growthTime fl">成长时光</span>
+			<p class="con fl">记录宝宝成长，坚持每天来一张</p>
+		</div>
+		<div class="titlesBar">
+			<img src="../static/images/parentingTrickIcon.png" class="icon fl">
+			<div class="verticalLine parentingTrick fl"></div>
+			<span class="title parentingTrick fl">育儿有招</span>
+			<p class="con fl">宝宝哭闹立刻停的五大妙招</p>
+		</div>
+		<div class="titlesBar">
+			<img src="../static/images/freakyBeautifulExpIcon.png" class="icon fl">
+			<div class="verticalLine freakyBeautifulExp fl"></div>
+			<span class="title freakyBeautifulExp fl">辣妈美经</span>
+			<p class="con fl">产后塑形，我有绝招！</p>
+		</div>
+		<div class="titlesBar">
+			<img src="../static/images/serviceLifeIcon.png" class="icon fl">
+			<div class="verticalLine serviceLife fl"></div>
+			<span class="title serviceLife fl">生活服务</span>
+			<p class="con fl">最值得推荐的10处亲子活动基地</p>
+		</div>
+	</div>
+</body>
+</html>

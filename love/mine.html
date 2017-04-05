@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>我的立爱</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/love.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//传入value_left 控制进度条
+			var value_right = 0.7;
+			$(".value_div").animate({"right":(1-value_right)*100+"%"},1500);
+			$("#show_sub_money").on("click",function(){
+				$("#sub_money").show();
+			});
+			$("#sub_money .close").on("click",function(){
+				$("#sub_money").hide();
+			});
+    	});
+    </script>
+</head>
+<body bgcolor="#e3e3e3">
+	<div class="wrap mine">
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">我参与的公益项目</div>
+			<img src="../static/images/my_loves.png" class="setting" id="show_sub_money"/>
+		</header>
+		<div id="sub_money" hidden>
+			<div class="allScreen"></div>
+			<ul class="top">
+				<img src="../static/images/love_logo.png" class="logo"/>
+				<img src="../static/images/close_type1.png" class="close"/>
+				<li>
+					<div class="name fl">我捐献的善款：</div>
+					<div class="money fl">555555555555555555</div>
+					<div class="value fl">元</div>
+				</li>
+				<li>
+					<div class="name fl">我获得的善款：</div>
+					<div class="money fl">5555</div>
+					<div class="value fl">元</div>
+				</li>
+			</ul>
+		</div>
+		<ul class="list">
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="mine_detail.html">
+					<div class="include_img faj">
+						<img src="../static/images/1.jpg">
+					</div>
+					<div class="content">
+						<div class="title">中国公益项目中国公益项目国公益项目</div>
+						<div class="time">2013-07-07</div>
+						<div class="sub_con">中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目中国公益项目中国公益项目国公益项目</div>
+						<div class="body_div">
+							<div class="value_div"></div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

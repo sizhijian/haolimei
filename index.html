@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+    <style type="text/css">
+    	.header{height: 2.75rem;line-height: 2.75rem;background: #000;text-align: center;color: #fff;}
+    	.bootomUl{position: fixed;bottom: 0;width: 100%;}
+    	.bottomBtn{width: 33.33%;box-sizing:border-box;float: left;border: 1px solid #4E4E4E;text-align: center;height: 3rem;line-height:3rem;background: #fff;color:#999}
+    	.goodHome ,.liLove,.meiDao{position: fixed;bottom: 3rem;width: 20%;}
+    	.goodHome{left: 7%;}
+    	.liLove{left: 40%;}
+    	.meiDao{left: 73%;}
+    	.goodHome li,.liLove li,.meiDao li{height:3.5rem;line-height:3.5rem;border: 1px solid #333;text-align: center;}
+    	body a:-webkit-any-link{color: #666;}
+    </style>
+    <script src="static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".haojiaClick").click(function(){
+    			$(".goodHome").slideToggle();
+    			$(".liLove , .meiDao").slideUp();
+    		});
+    		$(".liaiClick").click(function(){
+    			$(".liLove").slideToggle();
+    			$(".goodHome , .meiDao").slideUp();
+    		});
+    		$(".meidaoClick").click(function(){
+    			$(".meiDao").slideToggle();
+    			$(".liLove , .goodHome").slideUp();
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">好立美</header>
+	</div>	
+	<ul class="goodHome">
+		<li><a href="good/nearby_stores.html">附近门店</a></li>
+		<li><a href="good/products.html">产品展示</a></li>
+		<li><a href="good/mom_bbs.html">妈妈论坛</a></li>
+		<li><a href="good/service_consult.html">专属服务</a></li>
+		<li><a href="good/join.html">我的好家</a></li>
+	</ul>
+	<ul class="liLove">
+		<li><a href="love/public.html">善款公开</a></li>
+		<li><a href="love/case.html">救助案例</a></li>
+		<li style="line-height: normal;"><a href="love/help.html">帮帮我吧(申请救助)</a></li>
+		<li><a href="love/mine.html">我的立爱</a></li>
+		<li><a href="love/index.html">立爱公益</a></li>
+	</ul>
+	<ul class="meiDao">
+		<li><a href="guide/store_partner.html">合作网店</a></li>
+		<li><a href="guide/pk.html">美导PK</a></li>
+		<li>导购扫码</li>
+		<li><a href="guide/login_meiguan.html">我的美管</a></li>
+		<li><a href="guide/login_meidao.html">我的美导</a></li>
+	</ul>
+	<ul class="bootomUl">
+		<li class="bottomBtn haojiaClick">好 • 家</li>
+		<li class="bottomBtn liaiClick" >立 • 爱</li>
+		<li class="bottomBtn meidaoClick" >美 • 导</li>
+	</ul>
+</body>
+</html>

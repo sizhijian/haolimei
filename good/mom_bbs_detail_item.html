@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>N层</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/jquery.qqFace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$('.emotion').qqFace({ 
+		        assign:'reply', //给输入框赋值 
+		        path:'../static/images/face/'    //表情图片存放的路径 
+		    });
+		    $("#facebox").css("bottom","0");
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap mom_bbs_detail_item">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">1楼</div>
+		</header>
+		<dl class="bbs_item">
+			<dt class="fa bbs_detail">
+				<img src="../static/images/icon.png"/ class="icon">
+				<div class="username">辣妈89898989</div>	
+			</dt>
+			<dd class="content">
+				<p>月底再怀不上就够呛了月底再怀不上就够呛了月底再怀不上就够呛了月底再怀不上就够呛了</p>
+				<div class="fa">
+					<div class="time">13分钟前</div>
+					<div class="f1"></div>
+					<img src="../static/images/smallMsgIcon.png" class="msgNumIcon">
+					<div class="msgNum">8</div>
+				</div>
+				<ul class="sub_reply">
+					<li><em class="name">辣妈8989898</em>：是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！</li>
+					<li><em class="name">辣妈8989898<button class="landlord">楼</button></em>：是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！</li>
+					<li><em class="name">辣妈8989898</em>：是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！是啊，我也这么认为！</li>
+					<li><em class="name">爱宝宝</em>：呵呵！</li>
+					<li><em class="name">爱宝宝</em>：呵呵！</li>
+					<li><em class="name">爱宝宝</em>：呵呵！</li>
+				</ul>
+			</dd>
+		</dl>
+		<footer class="footer">
+			<div class="emotion"></div>
+			<input type="text" id="reply" class="reply" placeholder="回复也是一种鼓励"/>
+			<button class="replyBtn">发送</button>
+		</footer>
+	</div>
+</body>
+</html>

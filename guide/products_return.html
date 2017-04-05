@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>退换货统计</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".submit_question").click(function(){
+	    		if($(".quest_textarea").val().length<30){
+	    			layer.msg("请尽量详细描述商品问题哦");
+	    		}else{
+	    			layer.open({
+						title:'',
+					    content: '问题提交成功',
+					    yes: function(index, layero){
+					        //do something
+					        layer.close(index); //如果设定了yes回调，需进行手工关闭
+			    			location.href="index.html";
+					    }
+					}); 
+	    		}
+    		})
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap product_return">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="location.href='index.html'"/>
+			<div class="title">退换货统计</div>
+		</header>
+		<ul class="selectBabysOption">
+			<li class="selectBabyOrMom fa">
+				<div class="name">店面选择</div>
+				<div class="f1"></div>
+				<select name="">
+					<option value="">崇文门店</option>
+					<option value="">朝阳门店</option>
+					<option value="">国贸店</option>
+				</select>
+				<img src="../static/images/popbox-right.png"/>
+			</li>
+			<li class="selectDepartment fa">
+				<div class="name">退换产品</div>
+				<div class="f1"></div>	
+				<select name="">
+					<option value="">奶嘴</option>
+					<option value="">奶粉</option>
+				</select>			
+				<img src="../static/images/popbox-right.png"/>				
+			</li>
+		</ul>
+		<div class="writeQuestion">
+			<textarea class="quest_textarea" name="" rows="5" cols="" placeholder="问题描述请不要低于30字哦，越详细越好~"></textarea>
+		</div>
+		<button class="submit_question" onclick="">提交</button>
+	</div>
+</body>
+</html>

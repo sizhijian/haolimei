@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', { mouseWheel: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+	<script type="text/javascript">
+    	$(function(){
+    		$(".shareFriend").on("touchstart",function(){
+    			$(".share").show();
+    			$(".allScreen").show();
+    		});
+    		$(".share").on("touchend",function(){
+    			$(".allScreen").hide();
+    			$(this).hide();
+    		});
+    		$("#closeHistoryPage").on("click",function(){
+    			$(".allScreen").hide();
+    			$(".invitationHistoryPage").animate({"left":"105%"},500);
+    		});
+    		$("#showHistoryPage").on("click",function(){
+    			$(".allScreen").show();    		
+    			$(".invitationHistoryPage").animate({"left":"5%"},500);    			
+    		});
+    	});
+    </script>
+</head>
+<body onload="loaded()">
+	<div class="wrap recommendedAwards">
+		<div class="allScreen" hidden=""></div>
+		<!--历史积分页-->
+		<div class="invitationHistoryPage" >
+			<img src="../static/images/close-.png" class="closeIcon" id="closeHistoryPage"/>
+			<div class="historyTitle clearfix">
+				<ul>
+					<li>头像</li>
+					<li>昵称</li>
+					<li>奖励积分</li>
+					<li>注册日期</li>
+				</ul>
+			</div>
+			<div class="historyContent" id="wrapper">
+				<div id="">
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				<ul>
+					<li><img src="../static/images/icon.png"/></li>
+					<li class="faj">hello</li>
+					<li>110</li>
+					<li>2016-09-09</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">推荐有奖</div>
+		</header>
+		<div class="meiBeanIntegral">
+			<span class="invitationHistory fr"  id="showHistoryPage">
+				已获得 <em>0</em> 元
+			</span>
+		</div>
+		<div class="shareNewUserInfo">
+			推荐新用户并成功消费,获得积分
+		</div>
+		<button class="shareFriend">分享有礼</button>
+		<div class="share" hidden>
+			<div class="allScreen"></div>
+			<img src="../static/images/share.png"/>
+		</div>
+	</div>
+</body>
+</html>

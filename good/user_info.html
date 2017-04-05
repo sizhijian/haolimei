@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>个人中心</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/calendar/foundation-datepicker.min.css"/>    
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/calendar/foundation-datepicker.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="../static/js/calendar/foundation-datepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>    
+    <script type="text/javascript">
+    	$(function(){
+    		//设置日历
+    		$("#reset_baby_birthday").fdatepicker();
+			//点击备孕中    		
+    		$("#preparePregnant").on("touchend",function(){
+				$(this).addClass("stateSelected");
+				$("#isPregnant , #babyWasBron , #other").removeClass("stateSelected");
+				$(".babyBirthday , .babySex").hide();
+			});
+			//点击已怀孕
+			$("#isPregnant").on("touchend",function(){
+				$(this).addClass("stateSelected");
+				$("#preparePregnant , #babyWasBron , #other").removeClass("stateSelected");
+				$(".babyBirthday , .babySex").hide();
+			});
+			//点击宝宝出生
+			$("#babyWasBron").on("touchend",function(){
+				$(this).addClass("stateSelected");
+				$("#isPregnant , #preparePregnant , #other").removeClass("stateSelected");
+				$(".babyBirthday , .babySex").show();    			
+			});
+			//点击其他
+			$("#other").on("touchend",function(){
+				$(this).addClass("stateSelected");
+				$("#isPregnant , #babyWasBron , #preparePregnant").removeClass("stateSelected");
+				$(".babyBirthday , .babySex").show();
+			});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap productsShow">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">个人中心</div>
+		</header>
+		<nav class="orderNavTab">
+			<div class="typeFirst selectedColor fl">宝宝档案</div>
+			<div class="typeSecond fl"><a href="orders.html">订单查询</a></div>
+			<div class="typeThird fl"><a href="service_parenting_inoculation_set.html">接种疫苗</a></div>
+		</nav>
+		<ul class="user_info clearMarginTop">
+			<li>
+				<span class="name">宝宝昵称:</span>
+				<input type="" name="name" id="name" value="张三" />
+			</li>
+			<li>
+				<span class="name">个性签名:</span>
+				<input type="" name="name" id="name" value="张三" />
+			</li>
+		</ul>
+		<div class="choiceYourState">请选择您的状态 ~</div>
+		<ul class="choiceState clearfix">
+			<li class="preparePregnant stateSelected fl" id="preparePregnant">
+				<img src="../static/images/preparePregnantImg.png"/>
+			</li>
+			<li class="isPregnant fl" id="isPregnant">
+				<img src="../static/images/isPregnantImg.png"/>
+			</li>
+			<li class="babyWasBron clearfix fl" id="babyWasBron">
+				<img src="../static/images/babyWasBronImg.png"/>
+			</li>
+			<li class="other fl" id="other">
+				<img src="../static/images/otherImg.png"/>
+			</li>
+		</ul>	
+		<div class="babyBirthday" hidden="">宝宝生日：<input type="text" id="reset_baby_birthday" readonly="readonly" placeholder="请输入宝宝生日"/></div>
+		<div class="babySex" hidden="">宝宝性别：
+			<select name="">
+				<option value="boy">男</option>
+				<option value="girl">女</option>
+			</select>
+		</div>
+		<button class="change_info_btn">完成修改</button>
+	</div>
+</body>
+</html>

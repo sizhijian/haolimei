@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta content="telephone=no" name="format-detection" />
+		<title>订单确认</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+		<script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/good.js" type="text/javascript" charset="utf-8"></script>		
+	</head>
+	<body>
+		<div class="wrap integral_exchange_confirm">			
+			<header class="header fa">
+				<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+				<div class="title">订单确认</div>
+			</header>
+			<dl class="address">
+				<dt>
+					<button class="set_address" onclick="location.href='integral_exchange_insertAddress.html'">点此新增收货地址</button>
+				</dt>
+				<dd id="to_select_address">
+					<div class="title">收货地址</div>
+					<div class="username fl">张三</div>
+					<div class="phone fl">13848484848</div>
+					<div class="address clearfix">朝阳区朝阳区超强南瓜</div>
+				</dd>
+			</dl>
+			<dl class="send_type">
+				<dt class="fl">配送方式</dt>
+				<dd class="fr">
+					<select name="">
+						<option value="">顺丰速运</option>
+						<option value="">圆通速运</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="product_info">
+				<dt class="faj"><img src="../static/images/orderListProductImg.png"/></dt>
+				<dd>
+					<p class="name">贝因美奶粉贝因美奶粉贝因美奶粉贝因美奶粉贝因美奶粉贝因美奶粉贝因美奶粉贝因美奶粉</p>
+					<p class="num">×1</p>
+					<p class="price">￥0.00</p>
+				</dd>
+			</dl>
+			<ul class="order_price">
+				<li>订单金额</li>
+				<li>0.00</li>
+				<li class="clearfix">消耗积分</li>
+				<li>11800</li>
+				<li class="clearfix">运费</li>
+				<li>0.00</li>
+			</ul>
+			<footer class="footer">
+				<div class="price fl">实付款：￥0.00</div>
+				<button id="order_submit">提交订单</button>
+			</footer>
+			<div class="address_header" style="display: none;">
+				<header class="address_header header fa" id="select_address_header">
+					<img src="../static/images/back.png" class="backImg" id="close_address_list"/>
+					<div class="title">选择收货地址</div>
+				</header>
+			</div>
+			<div class="select_address">
+				<ul>
+					<li>
+						<div class="default">默认</div>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+					<li>
+						<div class="username fl">张三</div>
+						<div class="phone fl">13848484848</div>
+						<div class="address clearfix select_addressOfAddress">朝阳区朝阳区超强南瓜</div>
+						<a href="integral_exchange_editAddress.html"><button class="select_addressOfEditBtn">编辑</button></a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</body>
+</html>

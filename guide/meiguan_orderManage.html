@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>业绩管理</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/calendar/foundation-datepicker.min.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("#day_tab").on("touchend",function(){
+    			$(this).addClass("selectedColor");
+    			$("#month_tab").removeClass("selectedColor");
+    			$("#day_count").show();
+    			$("#month_count").hide();
+    		});
+    		$("#month_tab").on("touchend",function(){
+    			$(this).addClass("selectedColor");
+    			$("#day_tab").removeClass("selectedColor");
+    			$("#month_count").show();
+    			$("#day_count").hide();
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap order_manage">
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">业绩管理</div>
+		</header>
+		<nav class="countNavTab">
+			<div class="typeFirst selectedColor fl" id="day_tab">日度统计</div>
+			<div class="typeSecond fr" id="month_tab">月度统计</div>
+		</nav>
+		<dl class="day_count" id="day_count">
+			<dt>
+				<div class="typeFirst">姓名</div>
+				<div class="typeSecond">业绩</div>
+				<div>名次</div>
+			</dt>
+			<dd>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>张三</li>
+					<li>4000</li>
+					<li>1</li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="day_count" id="month_count" hidden>
+			<dt>
+				<div class="typeFirst">姓名</div>
+				<div class="typeSecond">业绩</div>
+				<div>名次</div>
+			</dt>
+			<dd>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+				<ul class="item">
+					<li>李四</li>
+					<li>3000</li>
+					<li>1</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</body>
+</html>

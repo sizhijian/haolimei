@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/guide.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".getChanceBtn,.getChanceIcon").click(function(){
+    			$(".allScreen ,.integralRuleContent").show();
+    		});
+    		$(".close").click(function(){
+    			$(".allScreen ,.integralRuleContent").hide();
+    		});
+    		//控制头像样式
+			$("#userIcon").height($("#userIcon").width());
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap myMeidao">
+		<div class="allScreen" hidden=""></div>
+		<div class="integralRuleContent" hidden="">
+			<img src="../static/images/close-.png" class="close">
+				<p class="title">规则</p>
+			积分规则积分规则积分规则积1分规则积分规则积
+		</div>
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="location.href='../index.html'"/>
+			<div class="title">个人中心</div>
+		</header>
+		<div class="userInfo">
+			<div class="userName">王丽雁</div>
+			<div class="jobNum">
+				工号
+				<em>12345678</em>
+			</div>
+			<div class="userIcon" id="userIcon">
+				<img src="../static/images/long_pro_img.png"/>
+				<input class="update_img_input" type="file" name="" id="">
+			</div>
+			<div class="getMoney fa">
+				<a class="getMoneyBtn" href="transferred_banlance.html">佣金获取</a>
+				<img src="../static/images/getChanceIcon.png" class="getChanceIcon"/>
+				<button class="getChanceBtn">获取资格</button>
+			</div>
+			<nav class="nav">
+				<div class="item">
+					<a href="order_ongoing_list.html">
+						<div class="num">12</div>
+						进行中订单
+					</a>
+				</div>
+				<div class="item">
+					<a href="products_return.html">
+						<div class="num">1</div>
+						退换统计
+					</a>
+				</div>
+				<div class="item">
+					<a href="order_index.html">
+						<div class="num">3569</div>
+						我的业绩
+					</a>
+				</div>
+			</nav>
+		</div>
+		<ul class="list">
+			<li>
+				<a href="comm_list.html?4">
+					<img src="../static/images/itemIcon6.png" class="itemIcon"/>
+					<div class="name">营销快讯</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>
+			<li>
+				<a href="products_know.html">
+					<img src="../static/images/itemIcon2.png" class="itemIcon"/>
+					<div class="name">基础知识</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>
+			<li>
+				<a href="comm_list.html?1">
+					<img src="../static/images/itemIcon1.png" class="itemIcon"/>
+					<div class="name">管理规定</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>
+			<li>
+				<a href="comm_list.html?2">
+					<img src="../static/images/itemIcon3.png" class="itemIcon"/>
+					<div class="name">礼仪培训</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>
+			<li>
+				<a href="comm_list.html?3">
+					<img src="../static/images/itemIcon4.png" class="itemIcon"/>
+					<div class="name">通知公告</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>
+			<li>
+				<a href="pk.html">
+					<img src="../static/images/itemIcon5.png" class="itemIcon"/>
+					<div class="name">我的PK</div>
+					<img src="../static/images/rightGo.png" class="rightGo"/>
+				</a>
+			</li>			
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/love.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$("#close_pay").click(function(){
+    			$("#give_love").hide();
+    		});
+    		$("#will_pay").click(function(){
+    			$("#give_love").show();
+    		});
+    		$("#show_share").click(function(){
+    			$("#share").show();
+    		});
+    		$("#share").click(function(){
+    			$("#share").hide();
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap mine_detail">
+		<div class="share" id="share" hidden>
+			<div class="allScreen"></div>
+			<img src="../static/images/share_.png">
+		</div>
+		<div id="give_love" hidden>
+			<div class="allScreen"></div>
+			<div class="input_money">
+				<img src="../static/images/close_type1.png" id="close_pay"/>
+				请输入捐款金额<input type="text" type="number"/>元
+				<button>立即捐款</button>
+			</div>
+		</div>
+		<header class="header header-fixed fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title"></div>
+			<img src="../static/images/icon_fenxiang.png" class="setting" id="show_share"/>
+		</header>
+		<div class="include_img faj">
+			<img src="../static/images/1.jpg" class="projectImg">
+		</div>
+		<table border="0" class="tb">  
+			<div class="projectName">贫困孤儿助养<em class="sub_time">2016-07-07</em></div>
+			<tbody>
+				<tr>                                          
+					<td width="45%">
+						目标 1000000 元<br>已筹 <span>465360.53</span>元
+					</td>                                          
+					<td width="33%">
+						<button class="give_btn" id="will_pay">我要捐款</button>
+					</td>                                                                              
+				</tr>             
+			</tbody>
+		</table>
+		<div class="info_con">2016年4月，感谢291,215位爱心小伙伴向【贫困孤儿助养计划】捐助善款3,152,674.25元。本月共配对六百余份孤儿资料，并向四川、江苏、山东的9个项目区拨付730,725元资助款项。19-25日，项目工作人员分两路赶赴江苏涟水、淮安及响水、大丰、射阳项目区，实地探访并审核了七百余份待资助孩子的申报资料。<br />
+		2016年4月，感谢291,215位爱心小伙伴向【贫困孤儿助养计划】捐助善款3,152,674.25元。本月共配对六百余份孤儿资料，并向四川、江苏、山东的9个项目区拨付730,725元资助款项。19-25日，项目工作人员分两路赶赴江苏涟水、淮安及响水、大丰、射阳项目区，实地探访并审核了七百余份待资助孩子的申报资料。<br />
+		2016年4月，感谢291,215位爱心小伙伴向【贫困孤儿助养计划】捐助善款3,152,674.25元。本月共配对六百余份孤儿资料，并向四川、江苏、山东的9个项目区拨付730,725元资助款项。19-25日，项目工作人员分两路赶赴江苏涟水、淮安及响水、大丰、射阳项目区，实地探访并审核了七百余份待资助孩子的申报资料。<br />
+		2016年4月，感谢291,215位爱心小伙伴向【贫困孤儿助养计划】捐助善款3,152,674.25元。本月共配对六百余份孤儿资料，并向四川、江苏、山东的9个项目区拨付730,725元资助款项。19-25日，项目工作人员分两路赶赴江苏涟水、淮安及响水、大丰、射阳项目区，实地探访并审核了七百余份待资助孩子的申报资料。<br /></div>
+	</div>
+</body>
+</html>

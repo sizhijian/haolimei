@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title>我的帖子</title>   
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/good.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"/>
+    <script src="../static/js/jquery-1.10.1.min.js"></script>
+    <script src="../static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".bbs_my_item").click(function(){
+    			location.href='mom_bbs_detail.html';
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="wrap mom_bbs_list">
+		<header class="header fa">
+			<img src="../static/images/back.png" class="backImg" onclick="history.back()"/>
+			<div class="title">我的帖子</div>
+			<img src="../static/images/bbs_write.png" class="msg" onclick="location.href='mom_bbs_write.html'"/>
+		</header>
+		<ul class="bbs_cont">
+			<li class="bbs_my_item">
+				<img src="../static/images/icon.png" class="icon"/>
+				<div class="title fl">求推荐靠谱医生</div>
+				<div class="type">宝贝日记</div>
+				<div class="username clearfix fl">dnsidsij</div>
+				<div class="states fl">备孕中</div>
+				<span class="msgNum fr">11110</span>	
+				<img src="../static/images/smallMsgIcon.png" class="msdNum fr">
+				<div class="time fr">9分钟前</div>
+			</li>
+			<li class="bbs_my_item">
+				<img src="../static/images/icon.png" class="icon"/>
+				<div class="title fl">求推荐靠谱医生</div>
+				<div class="type">宝贝日记</div>				
+				<div class="username clearfix fl">dnsidsij</div>
+				<div class="states fl">备孕中</div>
+				<span class="msgNum fr">11110</span>	
+				<img src="../static/images/smallMsgIcon.png" class="msdNum fr">
+				<div class="time fr">9分钟前</div>
+			</li>
+			<li class="bbs_my_item">
+				<img src="../static/images/icon.png" class="icon"/>
+				<div class="title fl">求推荐靠谱医生</div>
+				<div class="type">宝贝日记</div>				
+				<div class="username clearfix fl">dnsidsij</div>
+				<div class="states fl">备孕中</div>
+				<span class="msgNum fr">11</span>	
+				<img src="../static/images/smallMsgIcon.png" class="msdNum fr">
+				<div class="time fr">9分钟前</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
